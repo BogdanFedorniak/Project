@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F.company - Електроніка для всіх</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Open+Sans:wght@700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Навігаційна панель -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#"><img src="https://secure.gravatar.com/avatar/fabdb283fe15708440314fae08b0e7a1?s=60&d=retro&r=g" alt="Логотип"></a>
+            <a href="#">F.company</a>
+        </div>
+        <div class="nav-items">
+            <ul>
+                <li><a href="#home" id="home-link">Головна</a></li>
+                <li class="dropdown">
+                    <a href="#" id="categories-btn">Категорії</a>
+                    <div class="dropdown-content">
+                        <a href="#" class="category" data-category="smartphones">Смартфони</a>
+                        <a href="#" class="category" data-category="laptops">Ноутбуки</a>
+                        <a href="#" class="category" data-category="tablets">Планшети</a>
+                        <a href="#" class="category" data-category="accessories">Аксесуари</a>
+                        <a href="#" class="category" data-category="wearables">Носимі пристрої</a>
+                        <!-- Додайте більше категорій при необхідності -->
+                    </div>
+                </li>
+                <li><a href="#" id="game-link">Ігра</a></li>
+            </ul>
+        </div>
+        <div class="user-greeting">
+            <input type="text" id="username" placeholder="Введіть своє ім'я">
+            <button id="greet-btn">Привітати</button>
+            <p id="greeting-message"></p>
+        </div>
+        
+        <div class="hamburger-menu">
+            <button id="hamburger-btn">&#9776;</button>
+        </div>
+    </nav>
+
+    <!-- Головний контент -->
+    <main id="main-content" class="container mt-5">
+        <header class="banner mb-5">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="sale.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="sale1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <h1 class="text-center mt-4" id="welcome-message">Ласкаво просимо до F.company</h1>
+            <p class="text-center">Знайдіть свою ідеальну електроніку сьогодні</p>
+        </header>
+
+        <section class="popular-products mb-5">
+            <h2>Популярні товари</h2>
+            <div class="row products">
+                <!-- Динамічно додані товари -->
+            </div>
+        </section>
+
+        <section class="category-items mb-5" id="category-items-section" style="display: none;">
+            <h2>Товари за категорією</h2>
+            <div class="row items">
+                <!-- Динамічно додані товари за категорією -->
+            </div>
+        </section>
+
+        <section class="customer-reviews mb-5">
+            <h2>Відгуки клієнтів</h2>
+            <div class="reviews">
+                <div class="review">
+                    <p>"Найкращий смартфон, який я коли-небудь купував!" - Іван</p>
+                </div>
+                <div class="review">
+                    <p>"Висока якість та чудова продуктивність." - Марія</p>
+                </div>
+                <div class="review">
+                    <p>"Рекомендую всім своїм друзям." - Олександр</p>
+                </div>
+            </div>
+        </section>
+    </main>    
+
+    <!-- Гра -->
+    <div id="game-container" style="display: none;">
+        <canvas id="gameCanvas" width="800" height="600" style="border:1px solid #000000;"></canvas>
+        <div id="discountInfo">
+            <p>10 балів - 5% знижки</p>
+            <p>25 балів - 7% знижки</p>
+            <p>50 балів - 10% знижки</p>
+        </div>
+    </div>
+
+    <!-- Модальне вікно для деталей товару -->
+    <div class="modal fade" id="productDetailsModal" tabindex="-1" aria-labelledby="productDetailsModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productDetailsModalLabel">Деталі товару</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="productDetailsContent">Тут буде опис товару.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрити</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальне вікно для підтвердження додавання товару -->
+    <div class="modal fade" id="addToCartModal" tabindex="-1" aria-labelledby="addToCartModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addToCartModalLabel">Товар додано до кошика</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="addToCartMessage">Товар було успішно додано до кошика.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрити</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Нижня частина (footer) -->
+    <footer>
+        <div class="footer-content">
+            <p>Файбиш А. Федорняк Б.</p>
+            <p>© 2024 Всі права захищені</p>
+            <a href="#" id="telegramLink">
+                <img src="telegram.png" alt="Telegram" class="img-fluid" style="width: 50px;">
+            </a>
+        </div>
+        </div>
+    </footer>
+</body>
+</html>
