@@ -1,0 +1,141 @@
+{
+    "items": [
+        {
+            "id": "iphone13",
+            "category": "smartphones",
+            "title": "Смартфон iPhone 13",
+            "description": "Новий смартфон від Apple з покращеними характеристиками.",
+            "image": "https://files.foxtrot.com.ua/PhotoNew/img_0_60_8299_5_1.webp",
+            "price": 37999,
+            "popular": true
+        },
+        {
+            "id": "acer-nitro-5",
+            "category": "laptops",
+            "title": "Ноутбук ACER Nitro 5",
+            "description": "Потужний ноутбук від Acer для професіоналів.",
+            "image": "https://files.foxtrot.com.ua/PhotoNew/img_0_58_25443_0_1_J1MVrM.webp",
+            "price": 36999,
+            "popular": false
+        },
+        {
+            "id": "samsung-galaxy-tab",
+            "category": "tablets",
+            "title": "Планшет Samsung Galaxy Tab",
+            "description": "Сучасний планшет з великим екраном.",
+            "image": "https://files.foxtrot.com.ua/PhotoNew/11_638314288654326435.webp",
+            "price": 18999,
+            "popular": false
+        },
+        {
+            "id": "airpods-pro",
+            "category": "accessories",
+            "title": "Навушники AirPods",
+            "description": "Безпровідні навушники з активним шумопоглинанням.",
+            "image": "https://files.foxtrot.com.ua/PhotoNew/43_638301578466116665.webp",
+            "price": 6999,
+            "popular": true
+        },
+        {
+            "id": "apple-watch",
+            "category": "wearables",
+            "title": "Смарт-годинник Apple Watch",
+            "description": "Найновіший смарт-годинник від Apple.",
+            "image": "https://files.foxtrot.com.ua/PhotoNew/1_638301665156181086.webp",
+            "price": 34599,
+            "popular": false
+        },
+        {
+            "id": "iphone14",
+            "category": "smartphones",
+            "title": "Смартфон Iphone 14",
+            "description": "Потужний смартфон з відмінними характеристиками.",
+            "image": "https://files.foxtrot.com.ua/PhotoNew/img_0_60_8810_0_1_637982299209955782.webp",
+            "price": 39999,
+            "popular": true
+        },
+        {
+            "id": "asus-tuf-gaming-a17",
+            "category": "laptops",
+            "title": "Ноутбук ASUS TUF Gaming A17",
+            "description": "Компактний та потужний ноутбук від Asus.",
+            "image": "https://files.foxtrot.com.ua/PhotoNew/img_0_58_25994_0_1_wFLtOx.webp",
+            "price": 41999,
+            "popular": false
+        },
+        {
+            "id": "ipad-pro",
+            "category": "tablets",
+            "title": "Планшет iPad Pro",
+            "description": "Високопродуктивний планшет від Apple.",
+            "image": "https://files.foxtrot.com.ua/PhotoNew/img_0_1112_2664_0_1_L2YClv.webp",
+            "price": 32999,
+            "popular": true
+        },
+        {
+            "id": "xiaomi-redmi-power-bank",
+            "category": "accessories",
+            "title": "Повербанк XIAOMI Redmi",
+            "description": "Портативний зарядний пристрій високої якості.",
+            "image": "https://files.foxtrot.com.ua/PhotoNew/img_0_22282_1053_0.webp",
+            "price": 1999,
+            "popular": false
+        },
+        {
+            "id": "xiaomi-mi-band-7",
+            "category": "wearables",
+            "title": "Фітнес-браслет Xiaomi Mi Band 7",
+            "description": "Доступний фітнес-браслет з багатьма функціями.",
+            "image": "https://files.foxtrot.com.ua/PhotoNew/6876406_1_638169948430970589.webp",
+            "price": 1999,
+            "popular": false
+        },
+        {
+            "id": "iphone15",
+            "category": "smartphones",
+            "title": "Смартфон iPhone 15",
+            "description": "Новий стильний і ще більш надійний смартфон від Apple.",
+            "image": "https://files.foxtrot.com.ua/PhotoNew/1_638301564353916573.webp",
+            "price": 45999,
+            "popular": false
+        },
+        {
+            "id": "ipad-pro-11",
+            "category": "tablets",
+            "title": "Планшет iPad Pro 11",
+            "description": "Високопродуктивний планшет від Apple.",
+            "image": "https://i.eldorado.ua///goods_images/1458969/bdf36f656838627ae56dd7929a64e520.jpg",
+            "price": 22599,
+            "popular": false
+        },
+        {
+            "id": "lenovo-v15-g4",
+            "category": "laptops",
+            "title": "Ноутбук LENOVO V15 G4",
+            "description": "Потужний ноутбук від Lenovo для професіоналів.",
+            "image": "https://i.eldorado.ua//goods_images/1039096/8445497-1687497792.jpg",
+            "price": 18599,
+            "popular": false
+        },
+        {
+            "id": "earpods",
+            "category": "accessories",
+            "title": "Гарнітура APPLE EarPods",
+            "description": "Провідні навушники з мікрофоном.",
+            "image": "https://files.foxtrot.com.ua/PhotoNew/img_0_564_2583_0.webp",
+            "price": 999,
+            "popular": true
+        },
+        {
+            "id": "samsung-watch-5",
+            "category": "wearables",
+            "title": "Смарт-годинник Samsung Watch 5",
+            "description": "Найновіший смарт-годинник від Samsung.",
+            "image": "https://files.foxtrot.com.ua/PhotoNew/img_0_22161_994_0_1_637955682256644845.webp",
+            "price": 11999,
+            "popular": false
+        }
+
+
+    ]
+}
