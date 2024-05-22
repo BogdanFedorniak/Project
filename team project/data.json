@@ -104,7 +104,7 @@
             "category": "tablets",
             "title": "Планшет iPad Pro 11",
             "description": "Високопродуктивний планшет від Apple.",
-            "image": https://files.foxtrot.com.ua/PhotoNew/img_0_1112_2631_0_1_Lyivtf.webp",
+            "image": "https://files.foxtrot.com.ua/PhotoNew/img_0_1112_2631_0_1_Lyivtf.webp",
             "price": 22599,
             "popular": false
         },
@@ -113,7 +113,7 @@
             "category": "laptops",
             "title": "Ноутбук LENOVO V15 G4",
             "description": "Потужний ноутбук від Lenovo для професіоналів.",
-            "image": https://files.foxtrot.com.ua/PhotoNew/img_0_58_25975_0_1_5TmsHk.webp",
+            "image": "https://files.foxtrot.com.ua/PhotoNew/img_0_58_25975_0_1_5TmsHk.webp",
             "price": 18599,
             "popular": false
         },
